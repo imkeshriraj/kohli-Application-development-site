@@ -1,0 +1,194 @@
+/* @media screen and (max-width:1090px){
+
+
+        
+    .nav-list{
+       position:fixed;
+       top: 0;
+       left: 0;
+       height: 100vh;
+       flex-direction: column;
+       align-items: initial;
+       display: none;
+     
+       background-color: rgb(10, 10, 10);
+       z-index: 1000;
+       overflow-y: scroll;
+
+    }
+    .nav-list a{
+        color: rgb(43, 4, 77);
+    }
+    .nav-list > li{
+        line-height:6rem ;
+}
+.sub-menu{
+    position: initial;
+    border:3px solid transparent; 
+    border-left-color: rgb(43, 4, 77);
+    margin-left: 1rem;
+    max-height: 0 ;
+}
+.sub-menu::before{
+    display: none;
+}
+.nav-list li:hover> .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    max-height: initial;
+}
+li.move-right{
+    margin: 0 auto 0 0;
+    line-height: initial ;
+}
+.menu-icons{
+    display: block ;
+   
+}
+.menu-icons .fa-times{
+display: none;
+    
+}
+nav.active .menu-icons .fa-times {
+    display: block;
+
+}
+nav.active .menu-icons .fa-bars {
+    display: none;
+   
+
+}
+nav.active .nav-list{
+    
+    display: flex;
+}
+}  */
+
+
+
+@media screen and (max-width:840px){
+body{
+    overflow-x: hidden;
+  
+
+}
+.home {
+    display: flex;
+    /* max-width: 87%; */
+    margin: auto;
+    min-height: 51vh;
+    align-items: center;
+    z-index: -1;
+    
+}
+.intro-text h1 {
+    font-size: 2.5rem;
+    color: rgb(43, 4, 77);
+    font-weight: 500;
+}
+
+
+#logo img {
+    width: 238px;
+}
+.cover img {
+    height: 50vh;
+    filter: drop-shadow(0px 5px 3px rgb(43, 4, 77));
+    z-index: -1;
+}
+.cta {
+    padding: 0px 0 0 0;
+}
+#footer {
+    width: 107%;
+}
+#footer .footer-info p {
+    font-family: 'Playfair Display', serif;
+    font-size:18px;
+}
+#footer .social-links a {
+    font-size: 18px;
+}
+#footer .footer-links ul li a {
+    font-size:18px;
+    font-family: 'Playfair Display', serif;
+    color: #ddd;
+}
+#footer .row h4 {
+    font-size: 18px;
+}
+#footer .footer-contact p {
+    font-size: 18px;
+}
+#footer .social-links a {
+    font-size:18px;
+    width: 62px;
+    height: 50px;
+}
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 22px;
+}
+
+}
+@media screen and (max-width:770px){
+body{
+
+    overflow-x: hidden;
+  
+
+}
+.home {
+    display: flex;
+    max-width: 73%;
+    margin: auto;
+    min-height: 62vh;
+    align-items: center;
+    z-index: -1;
+    
+}
+.intro-text h1 {
+    font-size: 1.5rem;
+    color: rgb(43, 4, 77);
+    font-weight: 700;
+}
+
+
+#logo img {
+    width: 197px;
+}
+.cover img {
+    height: 50vh;
+    filter: drop-shadow(0px 5px 3px rgb(43, 4, 77));
+    z-index: -1;
+}
+
+}
+@media screen and (max-width:360px){
+    .cover{
+        display: none;
+    }
+    .intro-text h1 {
+        font-size: 30px;
+        color: rgb(43, 4, 77);
+        font-weight: 700;
+    }
+    #logo img {
+        width: 181px;
+    }
+    .icons{
+        display: none;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    .tech .small .lang img {
+        height: 6vh;
+    }
+    .tech .icon img {
+        height: 4vh;
+        margin: 10px;
+    }
+
+}
